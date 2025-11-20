@@ -9,6 +9,7 @@
 #pragma warning(push)
 #include "F4SE/F4SE.h"
 #include "RE/Fallout.h"
+#include "REX/REX/Singleton.h"
 
 #ifdef NDEBUG
 #	include <spdlog/sinks/basic_file_sink.h>
@@ -21,7 +22,6 @@
 #include <CLibUtil/rng.hpp>
 #include <CLibUtil/simpleINI.hpp>
 #include <CLibUtil/string.hpp>
-#include <CLibUtil/singleton.hpp>
 #include <ankerl/unordered_dense.h>
 #include <srell.hpp>
 #pragma warning(pop)
@@ -32,7 +32,6 @@ namespace logger = F4SE::log;
 
 using namespace std::literals;
 using namespace clib_util;
-using namespace clib_util::singleton;
 using SeedRNG = clib_util::RNG;
 
 // for visting variants

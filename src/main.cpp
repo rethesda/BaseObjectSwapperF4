@@ -52,10 +52,9 @@ extern "C" DLLEXPORT constinit auto F4SEPlugin_Version = []() noexcept {
 	return data;
 }();
 
-
 extern "C" DLLEXPORT bool F4SEAPI F4SEPlugin_Load(const F4SE::LoadInterface* a_f4se)
 {
-	F4SE::Init(a_f4se);
+	F4SE::Init(a_f4se, false);
 
 	InitializeLog();
 

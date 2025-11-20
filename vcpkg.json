@@ -1,16 +1,19 @@
 {
   "name": "bos-f4",
-  "version-string": "2.1.0",
+  "version-string": "2.2.0",
   "description": "",
   "homepage": "",
   "license": "MIT",
   "dependencies": [
     "clib-util",
-    "fmt",
     "unordered-dense",
     "rsm-mmio",
-    "spdlog",
+    {
+      "name": "spdlog",
+      "features": [ "wchar" ]
+    },
     "srell",
     "xbyak"
-  ]
+  ],
+  "builtin-baseline": "46a114bc182fdeb162554f255f02a4fba10733b5"
 }
